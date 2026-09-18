@@ -1,53 +1,87 @@
-# Acelerador do Pronto Socorro de Clínica Médica #
+# HMS · Estação Clínica de Pronto-Socorro
 
-## Objetivo
+**Protótipo de workflow clínico para reduzir fricção documental no atendimento de urgência.**
 
-Reestruturar a interface do HMS para tornar o fluxo de atendimento mais rápido, intuitivo e com menor número de cliques durante o plantão.
+O HMS é um projeto de interface para pronto-socorro de Clínica Médica. Foi criado a partir de um problema operacional concreto: em ambientes de alto volume, o médico precisa registrar, consultar e reutilizar informação clínica com velocidade sem transformar o atendimento em uma sequência de telas e redigitação.
 
-## Problema Atual
+## Problema de produto
 
-- Interface simples e pouco otimizada.
-- Muitas funcionalidades concentradas em uma única tela.
-- Navegação lenta durante o atendimento.
-- Layout pouco moderno.
-- CSS necessita padronização.
-- Ausência de uma Home organizada.
+A documentação de emergência tende a fragmentar o mesmo atendimento entre história, exame, conduta, resultados, reavaliação e destino. O HMS explora uma estação única que aproxima essas etapas.
 
-## O que deve ser implementado
+```text
+ENTRADA
+  ↓
+APRESENTAÇÃO CLÍNICA
+  ↓
+DOCUMENTAÇÃO ESTRUTURADA
+  ↓
+CONDUTA / PENDÊNCIAS
+  ↓
+REAVALIAÇÃO
+  ↓
+DESTINO
+```
 
-### Home
-- Criar uma página inicial.
-- Exibir os principais módulos em formato de cards.
-- Acesso rápido às ferramentas mais utilizadas.
+## Objetivos
 
-### Navegação
-- Sidebar fixa.
-- Menu organizado por categorias.
-- Pesquisa rápida de ferramentas.
+- reduzir cliques e navegação desnecessária;
+- manter informação clínica relevante visível durante o atendimento;
+- organizar ferramentas por contexto;
+- preservar continuidade entre avaliação inicial e reavaliação;
+- oferecer uma interface responsiva, legível e utilizável sob pressão;
+- permitir expansão incremental sem reconstruir o sistema a cada nova função.
 
-### Design
-- Padronizar CSS.
-- Melhorar tipografia.
-- Melhorar espaçamentos.
-- Melhor contraste.
-- Melhor responsividade.
-- Interface limpa e moderna.
+## Estado atual
 
-### Experiência do usuário
-- Reduzir quantidade de cliques.
-- Priorizar velocidade durante o plantão.
-- Layout pensado para médicos em ambiente de emergência.
+O repositório contém uma Home e uma **Estação Clínica** navegável, com interface web estática e lógica em JavaScript. A arquitetura atual funciona como protótipo de produto e laboratório de UX clínica.
 
-### Organização
-- Separar páginas por módulos.
-- Componentizar elementos reutilizáveis.
-- Facilitar futuras expansões do sistema.
+Arquivos centrais:
 
-## Critérios de aceite
+```text
+HMS/
+├── index.html          # Home
+├── estação.html        # estação clínica
+├── estação.js          # lógica de interação e cenários
+├── css/
+│   └── styles.css
+├── styles.css
+└── README.md
+```
 
-- Interface mais intuitiva.
-- Home funcional.
-- Navegação simplificada.
-- CSS padronizado.
-- Responsividade preservada.
-- Nenhuma funcionalidade existente deve ser perdida.
+## Princípios de UX clínica
+
+**Velocidade não pode eliminar revisão.** Atalhos devem reduzir trabalho mecânico, não confirmação médica.
+
+**Uma informação, múltiplos usos.** Dados já registrados devem poder alimentar etapas posteriores sem redigitação desnecessária.
+
+**Contexto antes de ferramenta.** Calculadoras, protocolos e campos devem aparecer quando forem pertinentes ao fluxo.
+
+**Interface previsível.** Em emergência, consistência de navegação e hierarquia visual são requisitos funcionais.
+
+## Tecnologia
+
+- HTML5;
+- CSS3;
+- JavaScript;
+- arquitetura client-side;
+- compatível com publicação estática.
+
+## Executar localmente
+
+```bash
+python3 -m http.server 8000
+```
+
+Depois acesse `http://localhost:8000`.
+
+## Relação com outros projetos
+
+O HMS representa uma etapa anterior da exploração de workflow clínico que posteriormente ganhou uma arquitetura documental e temporal mais explícita no **Zera PS**. Os repositórios são mantidos separadamente para preservar decisões, experimentos de interface e evolução do produto.
+
+## Status
+
+**Protótipo em desenvolvimento.** Não é sistema assistencial homologado e não deve ser utilizado como fonte autônoma de decisão clínica.
+
+## Autoria
+
+Projeto idealizado e desenvolvido por **Dra. Joyce Radis**, médica com atuação em pronto-socorro, a partir de necessidades observadas no fluxo real de atendimento.
