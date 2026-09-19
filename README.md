@@ -2,6 +2,22 @@
 
 **Protótipo de workflow clínico para reduzir fricção documental no atendimento de urgência.**
 
+> **English:** Emergency-department workflow prototype focused on reducing documentation friction and unnecessary navigation.
+
+[**Abrir demonstração**](https://joyceradis.github.io/HMS/)
+
+## O que este repositório demonstra
+
+| Competência | Evidência no projeto |
+| --- | --- |
+| Product discovery | problema observado no pronto-socorro transformado em hipótese de interface e fluxo |
+| Prototipação clínica | estação navegável para apresentação, documentação, conduta, reavaliação e destino |
+| Lógica client-side | JavaScript para estado de navegação, cenários e interação contextual |
+| UX sob restrição | desenho orientado a rapidez, previsibilidade e redução de redigitação |
+| Evolução de produto | decisões deste protótipo preservadas e posteriormente aprofundadas no Zera PS |
+
+**Portfolio signal:** clinical UX · workflow prototyping · JavaScript · product iteration · emergency-care domain knowledge
+
 O HMS é um projeto de interface para pronto-socorro de Clínica Médica. Foi criado a partir de um problema operacional concreto: em ambientes de alto volume, o médico precisa registrar, consultar e reutilizar informação clínica com velocidade sem transformar o atendimento em uma sequência de telas e redigitação.
 
 ## Problema de produto
