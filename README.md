@@ -6,15 +6,17 @@
 
 [**Abrir demonstração**](https://joyceradis.github.io/HMS/)
 
-## Papel no ecossistema Radis
+## Identidade e limites do projeto
 
-**HMS é um protótipo anterior de UX para pronto-socorro**, mantido para preservar decisões de design, experimentos e histórico da evolução clínica. O [ZeraPS](https://github.com/joyceradis/ZeraPS) é o projeto posterior, com modelagem mais explícita de estados e documentação.
+**Categoria:** protótipo histórico de UX clínica.
 
-**Integração planejada:** a Radis não precisa carregar duas estações de pronto-socorro equivalentes. Pode oferecer acesso ao ZeraPS e, quando útil, um link de referência para o HMS. Não há migração de código ou estado implementada por esta documentação.
+O **HMS** registra uma etapa anterior de experimentação para a estação de pronto-socorro. O [ZeraPS](https://github.com/joyceradis/ZeraPS) aprofunda o workflow e a modelagem temporal em outro repositório.
 
-**Situação:** protótipo de desenvolvimento, não produto assistencial homologado.
+HMS **não** precisa ser incorporado à Radis nem migrado para o ZeraPS para que seu código continue útil como referência. Não há migração ou integração funcional implementada.
 
-**Rastreabilidade:** [histórico deste README](https://github.com/joyceradis/HMS/commits/main/README.md) · [PRs do HMS](https://github.com/joyceradis/HMS/pulls?q=is%3Apr). Manter o histórico em vez de apagar uma etapa anterior da engenharia.
+**Estado:** protótipo de desenvolvimento, não aplicação assistencial homologada.
+
+**Rastreabilidade:** [histórico do README](https://github.com/joyceradis/HMS/commits/main/README.md) · [PRs](https://github.com/joyceradis/HMS/pulls?q=is%3Apr).
 
 ## O que este repositório demonstra
 
